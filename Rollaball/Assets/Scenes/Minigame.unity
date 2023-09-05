@@ -670,6 +670,7 @@ MonoBehaviour:
   countText: {fileID: 1905688088}
   winTextObject: {fileID: 1147892786}
   audioPlayer: {fileID: 1733275502}
+  myMaterial: {fileID: 2100000, guid: 3637ff762c34b734f8367c5cc64626b4, type: 2}
 --- !u!4 &522712869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2387236680109854998, guid: 2f362e47b1aad5841b8d67486392becc,

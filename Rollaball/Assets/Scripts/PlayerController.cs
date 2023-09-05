@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private float movementX;
     private float movementY;
     public AudioSource audioPlayer;
+    public Material myMaterial;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +57,7 @@ public class PlayerController : MonoBehaviour
             count = count + 1;
             SetCountText();
             audioPlayer.Play();
+            myMaterial.color = new Color(Random.value, Random.value, Random.value);
         } 
     }
 }
