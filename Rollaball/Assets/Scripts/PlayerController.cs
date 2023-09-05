@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     private float movementY;
     public AudioSource audioPlayer;
     public Material myMaterial;
-
+    public float sizeIncreaseFactor = 1.1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
             SetCountText();
             audioPlayer.Play();
             myMaterial.color = new Color(Random.value, Random.value, Random.value);
+            transform.localScale *= sizeIncreaseFactor;
         } 
     }
 }
