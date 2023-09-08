@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class AdventureGame : MonoBehaviour
 {
-   
-    public Text textComponent;
+    [SerializeField]
+    Text textComponent;
     // Start is called before the first frame update
     void Start()
     {
