@@ -219,8 +219,8 @@ RectTransform:
   m_Children:
   - {fileID: 1970131657}
   - {fileID: 2009417341}
-  - {fileID: 696081418}
   - {fileID: 1299853298}
+  - {fileID: 696081418}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -390,7 +390,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696081417}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -422,18 +422,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hello World! Hello World! Hello World! Hello World! Hello World! Hello
-    World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello
-    World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello
-    World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello
-    World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello
-    World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello
-    World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello
-    World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello
-    World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello
-    World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello
-    World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello
-    World! '
+  m_text: 'Placeholder story text. Placeholder story text. Placeholder story text.
+    Placeholder story text. Placeholder story text. Placeholder story text. Placeholder
+    story text. Placeholder story text. Placeholder story text. Placeholder story
+    text. Placeholder story text. Placeholder story text. Placeholder story text.
+    Placeholder story text. Placeholder story text. Placeholder story text. Placeholder
+    story text. Placeholder story text. Placeholder story text. Placeholder story
+    text. Placeholder story text. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
