@@ -12,26 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
   m_Name: Starting State
   m_EditorClassIdentifier: 
-  storyText: 'You are standing in the middle of a dark forest. The trees are tall
-    and the branches are thick, blocking out most of the moonlight. You can hear
-    the sound of animals rustling in the bushes, and you feel a chill run down your
-    spine.
-
-
-
-    You have two options:
-
-
-
-    1. You can go left and follow the
-    sound of the river.
-
-    2. You can go right and climb the hill.
-
-
-
-    What
-    do you do?'
+  storyText: "Ye be the dread captain o' the Flying Dutchman, a ship cursed to haunt
+    the endless ocean. As ye stand aloft yer quarters, yer crew casts their gaze
+    upon ye, and ye bellow...\n\n\n\n1: \"YE SCALLYWAGS. CAST YER EYES UPON THE WATERS,
+    NOT ME\"  \n\r\n2: \"ARRR!\""
   nextStates:
   - {fileID: 11400000, guid: e497a558189c62345ba0b62aea9b623a, type: 2}
   - {fileID: 11400000, guid: 1112c1ea356f9164e81ffaaca88ae899, type: 2}

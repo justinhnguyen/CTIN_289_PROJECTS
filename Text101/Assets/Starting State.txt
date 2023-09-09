@@ -1,8 +1,5 @@
-You are standing in the middle of a dark forest. The trees are tall and the branches are thick, blocking out most of the moonlight. You can hear the sound of animals rustling in the bushes, and you feel a chill run down your spine.
+A1. Sailing the Sea
+You are the captain of the Flying Dutchman, a cursed ship that is doomed to sail the seas forever. As you stand atop your quarters, your crew looks up to you, and you yell...
 
-You have two options:
-
-1. You can go left and follow the sound of the river.
-2. You can go right and climb the hill.
-
-What do you do?
+1: "YE SCALLYWAGS. LOOK OUT TO THE WATERS NOT ME"  
+2: "ARRR!"
