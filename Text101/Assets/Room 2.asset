@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
   m_Name: Room 2
   m_EditorClassIdentifier: 
-  storyText: This is room 2
+  storyText: 'Yer scallywag crew echoes, "YARRRR!" and the crew kicks off a shanty.
+    What be yer course of action?
+
+    
+
+    1: ''Tis the hour for grog!
+
+    2:
+    "ARRR!"'
   nextStates:
   - {fileID: 11400000, guid: e497a558189c62345ba0b62aea9b623a, type: 2}
   - {fileID: 11400000, guid: e5ef0ba322cc0bb4db3a13f64c2b9e26, type: 2}
