@@ -1,5 +1,0 @@
-A1. Sailing the Sea
-You are the captain of the Flying Dutchman, a cursed ship that is doomed to sail the seas forever. As you stand atop your quarters, your crew looks up to you, and you yell...
-
-1: "YE SCALLYWAGS. LOOK OUT TO THE WATERS NOT ME"  
-2: "ARRR!"
