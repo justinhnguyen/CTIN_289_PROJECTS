@@ -1,0 +1,6 @@
+"Truth be told, lad," ye confess, "I've grown weary of bearin' the captaincy of the Flying Dutchman. I long to be a regular man once more."
+
+Finn, with sincerity, offers to take yer place. Do ye accept his offer?
+
+1: Aye, I accept.
+2: Nay, I must bear this curse alone.

@@ -1,0 +1,6 @@
+"Come in," ye say, and Finn takes a seat by yer side. As a loyal mate, he cares deeply for yer well-being and offers his counsel. Ye confide, "Truth be told, lad, I've grown weary of bein' the captain of the Flying Dutchman. I long to be a regular man once more."
+
+Finn, with genuine care, offers to take yer place. Do ye accept his offer?
+
+1: Aye, I accept.
+2: Nay, I must bear this curse alone.

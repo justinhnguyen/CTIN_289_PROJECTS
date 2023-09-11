@@ -1,0 +1,4 @@
+Yer crew awaits yer command.
+
+1: Nothing
+2: "ARRR!"

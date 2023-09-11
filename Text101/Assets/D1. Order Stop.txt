@@ -1,0 +1,4 @@
+With a firm grip on yer fate, Finn challenges, "I've bested you in battle, why should I let you live?" What be yer response, Captain?
+
+1: ...
+2: "I am yer captain. By the code of the sea, ye must obey my orders."

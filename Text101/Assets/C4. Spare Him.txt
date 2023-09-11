@@ -1,0 +1,4 @@
+Ye spare Finn's life, though the weight of the situation weighs heavy upon ye, and he, grateful and loyal to ye, offers his counsel. Do ye accept his offer?
+
+1: Aye, I accept.
+2: Nay, I'll bear this burden alone.

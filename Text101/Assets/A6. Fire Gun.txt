@@ -1,0 +1,4 @@
+As the thunderous reports of yer pistols fill the air, it seems ye've drawn the eye of a sizable marine fleet, dozens strong. What be yer command, Captain?
+
+1: "ONWARDS, WE FIGHT!"
+2: "AVAST, TO SAFETY!"
