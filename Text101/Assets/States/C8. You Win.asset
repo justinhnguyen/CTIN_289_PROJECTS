@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
   m_Name: C8. You Win
   m_EditorClassIdentifier: 
-  storyText: With a heavy heart and a sense of relief, ye transfer the cursed mantle
+  storyText: "With a heavy heart and a sense of relief, ye transfer the cursed mantle
     of the Flying Dutchman's captain to Finn. Finally, ye break free from the relentless
     curse and can live out the rest of yer days as a regular man, unburdened by the
-    accursed sea.
-  nextStates: []
+    accursed sea. \n\nPlay Again?\n\n1. Yes"
+  nextStates:
+  - {fileID: 11400000, guid: e5ef0ba322cc0bb4db3a13f64c2b9e26, type: 2}

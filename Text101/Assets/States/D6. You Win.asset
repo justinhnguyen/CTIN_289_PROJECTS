@@ -12,8 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
   m_Name: D6. You Win
   m_EditorClassIdentifier: 
-  storyText: With a heavy heart but newfound hope, ye transfer the cursed mantle
-    of the Flying Dutchman's captain to Finn. Finally, ye break free from the relentless
+  storyText: 'With a heavy heart but newfound hope, ye transfer the cursed mantle
+    of the Flying Dutchman''s captain to Finn. Finally, ye break free from the relentless
     curse and can live out the rest of yer days as a regular man, unfettered by the
     accursed sea.
-  nextStates: []
+
+
+    Play Again?
+
+
+    1. Yes'
+  nextStates:
+  - {fileID: 11400000, guid: e5ef0ba322cc0bb4db3a13f64c2b9e26, type: 2}

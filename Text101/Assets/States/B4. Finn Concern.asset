@@ -17,15 +17,17 @@ MonoBehaviour:
     seas, Captain. Even a lowly navigator like meself can see when a battle be lost
     afore it''s even fought... is it death ye seek?"
 
-    
+
 
     What be yer response,
     Cap''n?
 
-    
+
 
     1. Explain ye merely testing yer crew
 
 
     2. ...'
-  nextStates: []
+  nextStates:
+  - {fileID: 11400000, guid: 75b762d36746ee7468369f1e130cc6a7, type: 2}
+  - {fileID: 11400000, guid: 19b0c775ad972094c86cbf2c30de58e8, type: 2}
