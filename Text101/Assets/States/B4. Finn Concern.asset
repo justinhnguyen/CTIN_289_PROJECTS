@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
+  m_Name: B4. Finn Concern
+  m_EditorClassIdentifier: 
+  storyText: 'Ye steer the ship to safer waters, and Finn, yer loyal navigator, steps
+    forward to share his thoughts. "Ye be the finest pirate to ever sail these treacherous
+    seas, Captain. Even a lowly navigator like meself can see when a battle be lost
+    afore it''s even fought... is it death ye seek?"
+
+    
+
+    What be yer response,
+    Cap''n?
+
+    
+
+    1. Explain ye merely testing yer crew
+
+
+    2. ...'
+  nextStates: []

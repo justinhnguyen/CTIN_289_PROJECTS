@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
+  m_Name: A5. ARRRR
+  m_EditorClassIdentifier: 
+  storyText: 'With yer crew lettin'' out a hearty "ARRRR!!!" in response, what be
+    yer choice?
+
+    
+
+    1: Raise a toast to celebrate their fiery spirit and
+    fire yer pistol into the heavens!
+
+
+    2: "ARRR!"'
+  nextStates:
+  - {fileID: 11400000, guid: d222d3e1a2ff53a46a972f8a0a941963, type: 2}
+  - {fileID: 11400000, guid: 865f2b785337fde41bccff0716adc3f2, type: 2}

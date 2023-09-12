@@ -10,17 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
-  m_Name: Room 2
+  m_Name: D4. You Lose
   m_EditorClassIdentifier: 
-  storyText: 'Yer scallywag crew echoes, "YARRRR!" and the crew kicks off a shanty.
-    What be yer course of action?
-
-    
-
-    1: ''Tis the hour for drinkin''!
-
-    2:
-    "ARRR!"'
+  storyText: "With a heavy heart and a somber tone, ye yell, \"Go away, Finn,\" and
+    continue on with yer night. The curse of the Flying Dutchman holds ye and yer
+    crew in its unyielding grip, sentencin' ye to an eternity of sailin' the unforgiving
+    seas. \r\n\n\rTry again?\r\n\r\n1. Yes\r\n\r\n2. No"
   nextStates:
-  - {fileID: 11400000, guid: e497a558189c62345ba0b62aea9b623a, type: 2}
   - {fileID: 11400000, guid: e5ef0ba322cc0bb4db3a13f64c2b9e26, type: 2}
+  - {fileID: 11400000, guid: 9d7d143c56524314cbb09a163b4d6ec4, type: 2}

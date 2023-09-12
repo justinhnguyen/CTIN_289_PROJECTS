@@ -10,17 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
-  m_Name: Room 1
+  m_Name: A9. You Lose
   m_EditorClassIdentifier: 
-  storyText: '"Ahoy, Captain! Off ahead, marines aplenty, dozens they be!" What be
-    yer choice of action?
+  storyText: 'Aye, ye be forever cursed to roam the boundless seas aboard the accursed
+    Flying Dutchman until the end of time.
 
     
 
-    1: "ONWARD, WE ENGAGE IN BATTLE!"
+    Try again?
 
-    2:
-    "AVAST, WE MAKE A SWIFT ESCAPE!"'
+    
+
+    1.
+    Yes
+
+    
+
+    2. No'
   nextStates:
-  - {fileID: 11400000, guid: 1112c1ea356f9164e81ffaaca88ae899, type: 2}
   - {fileID: 11400000, guid: e5ef0ba322cc0bb4db3a13f64c2b9e26, type: 2}
+  - {fileID: 11400000, guid: 9d7d143c56524314cbb09a163b4d6ec4, type: 2}

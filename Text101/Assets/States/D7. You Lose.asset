@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
+  m_Name: D7. You Lose
+  m_EditorClassIdentifier: 
+  storyText: 'As Finn sheathes his cutlass and utters the word "coward," ye and yer
+    crew carry on with yer cursed existence, bound to sail the never-ending seas
+    aboard the accursed Flying Dutchman for all eternity.
+
+    
+
+    Perhaps there
+    be another reason. Try again?
+
+    
+
+    1. Yes
+
+    
+
+    2. No'
+  nextStates:
+  - {fileID: 11400000, guid: e5ef0ba322cc0bb4db3a13f64c2b9e26, type: 2}
+  - {fileID: 11400000, guid: 9d7d143c56524314cbb09a163b4d6ec4, type: 2}

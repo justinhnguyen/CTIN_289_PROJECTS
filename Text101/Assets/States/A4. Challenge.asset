@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
+  m_Name: A4. Challenge
+  m_EditorClassIdentifier: 
+  storyText: 'Yer crew fetches a couple of barrels of grog, and ye start drinkin''.
+    In a drunken haze, ye find yerself challengin'' two of yer shipmates to a duel
+    to the death. Whom shall ye be selectin''?
+
+    
+
+    1: Graves, the Dreadful
+    Blade
+
+
+    2: Finn, the Loyal Navigator'
+  nextStates:
+  - {fileID: 11400000, guid: dfedce432e7031b4fb09e65e76a007ed, type: 2}
+  - {fileID: 11400000, guid: b32c52d60524acb4a8bc2fd36b91ced9, type: 2}

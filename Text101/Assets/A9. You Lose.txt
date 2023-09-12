@@ -1,1 +1,7 @@
 Aye, ye be forever cursed to roam the boundless seas aboard the accursed Flying Dutchman until the end of time.
+
+Try again?
+
+1. Yes
+
+2. No

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
+  m_Name: B3. Finn Interjection
+  m_EditorClassIdentifier: 
+  storyText: 'Yer navigator, Finn, speaks up with a swift protest. "If we engage
+    with them marines, Captain, we''ll find ourselves in a sticky situation, outnumbered
+    and riskin'' the whole crew."
+
+    
+
+    What be yer choice?
+
+    
+
+    1:
+    Agree and steer ye ship away.
+
+
+    2: Question not the Captain''s commands.
+    Unsheathe yer cutlass against Finn.'
+  nextStates:
+  - {fileID: 11400000, guid: 7605eafe11e8b424b9ff2d2704e73df6, type: 2}
+  - {fileID: 11400000, guid: b32c52d60524acb4a8bc2fd36b91ced9, type: 2}

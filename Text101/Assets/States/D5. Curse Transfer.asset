@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
+  m_Name: D5. Curse Transfer
+  m_EditorClassIdentifier: 
+  storyText: '"Come in," ye say, and Finn takes a seat by yer side. As a loyal mate,
+    he cares deeply for yer well-being and offers his counsel. Ye confide, "Truth
+    be told, lad, I''ve grown weary of bein'' the captain of the Flying Dutchman.
+    I long to be a regular man once more."
+
+    
+
+    Finn, with genuine care,
+    offers to take yer place. Do ye accept his offer?
+
+    
+
+    1: Aye, I accept.
+
+
+    2:
+    Nay, I must bear this curse alone.'
+  nextStates:
+  - {fileID: 11400000, guid: 18a75a1e17ab4ab43ab179f7d73a08ae, type: 2}
+  - {fileID: 11400000, guid: c5339fd56a9eda6438fe7d14418e5849, type: 2}

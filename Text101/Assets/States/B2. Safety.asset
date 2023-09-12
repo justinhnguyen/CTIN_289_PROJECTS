@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
+  m_Name: B2. Safety
+  m_EditorClassIdentifier: 
+  storyText: 'Ye make the wise choice of avoiding a futile clash with the marines.
+    What be yer next move?
+
+    
+
+    1: Continue sailin'' on the open sea.
+
+
+    2:
+    ''Tis high time for a drink.'
+  nextStates:
+  - {fileID: 11400000, guid: 4ab7e271ca23d7d458fa36b8abfbad2c, type: 2}
+  - {fileID: 11400000, guid: 86421cdbe683d6846b0cbaf0dd3d672d, type: 2}

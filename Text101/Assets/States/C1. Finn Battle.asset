@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
+  m_Name: C1. Finn Battle
+  m_EditorClassIdentifier: 
+  storyText: 'Ye and Finn unsheathe yer cutlasses and plunge into battle, with Finn
+    readyin'' a strike to yer left. What be yer move?
+
+    
+
+    1: Swiftly maneuver
+    to the right and aim to strike him in the back.
+
+
+    2: Use yer blade to parry
+    his incoming strike.'
+  nextStates:
+  - {fileID: 11400000, guid: de57fc4cd135e0e4ea23f3d90a0eca49, type: 2}
+  - {fileID: 11400000, guid: 70bb9e9dd41fc354d9877c47afaf8d48, type: 2}

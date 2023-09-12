@@ -10,12 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
-  m_Name: Starting State
+  m_Name: A1. Sailing the Sea
   m_EditorClassIdentifier: 
-  storyText: "Ye be the dread captain o' the Flying Dutchman, a ship cursed to haunt
-    the endless ocean. As ye stand aloft yer quarters, yer crew casts their gaze
-    upon ye, and ye bellow...\n\n\n\n1: \"YE SCALLYWAGS. CAST YER EYES UPON THE WATERS,
-    NOT ME\"  \n\r\n2: \"ARRR!\""
+  storyText: 'Ye be the dread captain eternally bounded to the Flying Dutchman, a
+    ship cursed to haunt the endless ocean. As ye stand aloft yer quarters, yer motley
+    crew casts their gaze upon ye, and ye bellow...
+
+    
+
+    1: "AVAST, YE ROTTEN
+    RASCALS. CAST YER EYES UPON THE ENDLESS BLUE, NOT UPON ME!"
+
+
+    2: "ARRR!"'
   nextStates:
   - {fileID: 11400000, guid: e497a558189c62345ba0b62aea9b623a, type: 2}
   - {fileID: 11400000, guid: 1112c1ea356f9164e81ffaaca88ae899, type: 2}

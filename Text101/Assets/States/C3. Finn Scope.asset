@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
+  m_Name: C3. Finn Scope
+  m_EditorClassIdentifier: 
+  storyText: 'Ye dodge his blade, sidestep to the right, and aim a blow for his back,
+    only to find that yer cutlass meets naught but his brass telescope! He swiftly
+    retaliates, strikin'' ye down and havin'' ye by the throat. What be yer move
+    now?
+
+    
+
+    1. Command him to cease.
+
+
+    2. Accept the fate he''s dealt
+    and let him take yer life.'
+  nextStates:
+  - {fileID: 11400000, guid: 077dac0299f1c474c84bff739e6d4417, type: 2}
+  - {fileID: 11400000, guid: fec98b18b12018b4d9731d6f182ed152, type: 2}

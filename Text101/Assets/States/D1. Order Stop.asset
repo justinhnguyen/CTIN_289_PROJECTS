@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a5522767abffe47a3ce2cc2172aaef, type: 3}
+  m_Name: D1. Order Stop
+  m_EditorClassIdentifier: 
+  storyText: 'With a firm grip on yer fate, Finn challenges, "I''ve bested you in
+    battle, why should I let you live?" What be yer response, Captain?
+
+    
+
+    1:
+    ...
+
+
+    2: "I am yer captain. By the code of the sea, ye must obey my orders."'
+  nextStates:
+  - {fileID: 11400000, guid: 19b0c775ad972094c86cbf2c30de58e8, type: 2}
+  - {fileID: 11400000, guid: 76cb530ff6f8a58428af5fce71395122, type: 2}
