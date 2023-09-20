@@ -2,41 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CreepSpawner : MonoBehaviour {
-
-    [SerializeField]
-    float startInterval;
-
-    [SerializeField]
-    float minInterval;
-
+public class CreepSpawner : MonoBehaviour
+{
+    [SerializeField] float startInterval;
+    [SerializeField] float minInterval;
     float interval; // Time between creep spawns
-
-    [SerializeField]
-    GameObject creepPrefab;
-
+    [SerializeField] GameObject creepPrefab;
     float nextSpawn;
 
-    // Start is called before the first frame update
-    void Start() {
+    public Transform[] waypoints; // Define waypoints for the path
 
+    void Start()
+    {
         interval = startInterval;
         nextSpawn = interval;
-
     }
 
-    // Update is called once per frame
-    void Update() {
+    void Update()
+    {
+        if (Time.time >= nextSpawn)
+        {
+            GameObject newCreep = Instantiate(creepPrefab, transform.position, Quaternion.identity);
+            Creep creepScript = newCreep.GetComponent<Creep>();
 
-        if (Time.time >= nextSpawn) {
+            if (creepScript != null)
+            {
+                // Set the waypoints for the newly spawned creep.
+                creepScript.waypoints = waypoints;
+            }
 
-            GameObject.Instantiate(creepPrefab, this.transform.position, Quaternion.identity);
-
-            interval = Mathf.Max(interval - 0.2f, minInterval);            
+            interval = Mathf.Max(interval - 0.2f, minInterval);
             nextSpawn = Time.time + interval;
-
         }
-
     }
-
 }
