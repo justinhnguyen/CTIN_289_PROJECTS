@@ -7,6 +7,7 @@ public class Creep : MonoBehaviour
         public float moveSpeed = 5f;
 
         public int currentWaypointIndex = 0;
+
         private void Start()
         {
             // Initialize the creep's position to the first waypoint.
