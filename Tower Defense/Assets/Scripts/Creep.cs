@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Creep : MonoBehaviour
     {
-        public Transform[] waypoints;
+        public GameObject[] waypoints;
         public float moveSpeed = 5f;
 
         public int currentWaypointIndex = 0;
 
         private void Start()
         {
-            // Initialize the creep's position to the first waypoint.
-            transform.position = waypoints[0].position;
+        // Initialize the creep's position to the first waypoint.
+            Debug.Log(waypoints.Length);
+            transform.position = waypoints[0].transform.position;
+
         }
 
         private void Update()
@@ -19,7 +21,7 @@ public class Creep : MonoBehaviour
             if (currentWaypointIndex < waypoints.Length)
             {
                 // Move the creep towards the current waypoint.
-                Vector3 targetPosition = waypoints[currentWaypointIndex].position;
+                Vector3 targetPosition = waypoints[currentWaypointIndex].transform.position;
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
                 // Check if the creep has reached the current waypoint.

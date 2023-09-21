@@ -48,16 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {fileID: 5876781516961165315, guid: b0b4cfb6b2b65f3479e6540339f45681, type: 3}
-  - {fileID: 5876781516961165315, guid: 4a8e624107c71404595cd71f183cb46e, type: 3}
-  - {fileID: 5227286365988975790, guid: 66cdb5ab48bc940449bead0b40df5f99, type: 3}
-  - {fileID: 5227286365988975790, guid: e997038935e070a45bdf1b8735145421, type: 3}
-  - {fileID: 5227286365988975790, guid: 964cbc3255c8a3f44be80fe561848627, type: 3}
-  - {fileID: 5227286365988975790, guid: 293fe8d1776ac7e429301ab8796a0128, type: 3}
-  - {fileID: 5227286365988975790, guid: 7fa5cef4174df6b4d8789de31bec791f, type: 3}
-  - {fileID: 5227286365988975790, guid: 508e415ea7e09244d97c87902b36b431, type: 3}
-  - {fileID: 5227286365988975790, guid: a37f46b6c6ced0446a16746e02b6d6e8, type: 3}
-  - {fileID: 5227286365988975790, guid: 7423162163356584a9eb9b44b1bd435a, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   moveSpeed: 5
   currentWaypointIndex: 0
 --- !u!61 &2665002790126097764
