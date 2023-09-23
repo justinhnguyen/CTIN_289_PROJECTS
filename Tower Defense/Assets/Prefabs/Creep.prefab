@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  moveSpeed: 5
+  moveSpeed: 2
   currentWaypointIndex: 0
 --- !u!61 &2665002790126097764
 BoxCollider2D:

@@ -2,20 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour {
+public class Bullet : MonoBehaviour
+{
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            // Handle the impact with the enemy/creep here
+            GameManager gameManager = FindObjectOfType<GameManager>();
+            if (gameManager != null)
+            {
+                gameManager.HandleKillCreep();
+            }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
-
-        if (collision.gameObject.tag == "Enemy") {
-            
-            GameManager gameManager = GameObject.FindObjectOfType<GameManager>();
-            gameManager.HandleKillCreep();
-
-            Destroy(collision.gameObject);
-            Destroy(gameObject);
-
+            Destroy(other.gameObject); // Destroy the creep
+            Destroy(gameObject); // Destroy the bullet
         }
-
     }
-
 }
