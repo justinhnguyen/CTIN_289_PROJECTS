@@ -10,7 +10,7 @@ public class CreepSpawner : MonoBehaviour
     [SerializeField] GameObject creepPrefab;
     float nextSpawn;
 
-    public GameObject[] waypoints; // Define waypoints for the path
+    public Transform[] waypoints; // Define waypoints for the path
 
     void Start()
     {

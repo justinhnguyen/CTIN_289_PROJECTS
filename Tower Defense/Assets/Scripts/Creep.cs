@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Creep : MonoBehaviour
     {
-        public GameObject[] waypoints;
+        public Transform[] waypoints;
         public float moveSpeed = 5f;
 
         public int currentWaypointIndex = 0;
@@ -23,12 +23,6 @@ public class Creep : MonoBehaviour
                 // Move the creep towards the current waypoint.
                 Vector3 targetPosition = waypoints[currentWaypointIndex].transform.position;
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-
-                // Check if the creep has reached the current waypoint.
-                if (transform.position == targetPosition)
-                {
-                    currentWaypointIndex++;
-                }
             }
             else
             {
@@ -36,4 +30,13 @@ public class Creep : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Check if the creep has reached the current waypoint.
+        if (collision.gameObject.tag == "Waypoint")
+        {
+            currentWaypointIndex++;
+        }
     }
+
+}
