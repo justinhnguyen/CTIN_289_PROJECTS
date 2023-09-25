@@ -17,26 +17,22 @@ public class TowerSpawner : MonoBehaviour
     {
         if (gameManager.IsInTowerSpawnMode())
         {
-            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            // Hide the default cursor
+            Cursor.visible = false;
 
-            Vector2 point = new Vector2(worldPosition.x, transform.position.y);
-            Collider2D col = Physics2D.OverlapPoint(point);
-            if (col)
-            {
-                marker.SetActive(true);
-                marker.transform.position = point;
-            }
-            else
-            {
-                marker.SetActive(false);
-            }
+            // Set the marker's position to the mouse position
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            marker.transform.position = new Vector3(worldPosition.x, worldPosition.y, marker.transform.position.z);
+
+            // Show the marker
+            marker.SetActive(true);
 
             if (Input.GetMouseButtonDown(0))
             {
                 // No rotation applied, so set rotation to Quaternion.identity (no rotation)
                 Quaternion rotation = Quaternion.identity;
 
-                GameObject newTowerGO = Instantiate(towerPrefab, point, rotation);
+                GameObject newTowerGO = Instantiate(towerPrefab, marker.transform.position, rotation);
                 Tower newTower = newTowerGO.GetComponent<Tower>();
 
                 gameManager.HandleTowerSpawned(newTower);
@@ -44,6 +40,10 @@ public class TowerSpawner : MonoBehaviour
         }
         else
         {
+            // Show the default cursor
+            Cursor.visible = true;
+
+            // Hide the marker
             marker.SetActive(false);
         }
     }

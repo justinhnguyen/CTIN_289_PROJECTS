@@ -768,7 +768,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "$2\tNew Tower"
+  m_text: "$250\tNew Tower"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1367,11 +1367,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5876781516961165315, guid: b0b4cfb6b2b65f3479e6540339f45681, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.86
+      value: -3.7
       objectReference: {fileID: 0}
     - target: {fileID: 5876781516961165315, guid: b0b4cfb6b2b65f3479e6540339f45681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.02
+      value: 3.86
       objectReference: {fileID: 0}
     - target: {fileID: 5876781516961165315, guid: b0b4cfb6b2b65f3479e6540339f45681, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2486,7 +2486,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5876781516961165315, guid: b0b4cfb6b2b65f3479e6540339f45681, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.85
+      value: -5.99
       objectReference: {fileID: 0}
     - target: {fileID: 5876781516961165315, guid: b0b4cfb6b2b65f3479e6540339f45681, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3052,7 +3052,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5876781516961165315, guid: b0b4cfb6b2b65f3479e6540339f45681, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.29
+      value: -6.24
       objectReference: {fileID: 0}
     - target: {fileID: 5876781516961165315, guid: b0b4cfb6b2b65f3479e6540339f45681, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6302,7 +6302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 034c616b2ff2d454ebf557dee385f370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingMoney: 3
+  startingMoney: 350
   moneyUI: {fileID: 864984404}
 --- !u!4 &872926660
 Transform:
@@ -10773,7 +10773,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5876781516961165315, guid: b0b4cfb6b2b65f3479e6540339f45681, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.28
+      value: -3.55
       objectReference: {fileID: 0}
     - target: {fileID: 5876781516961165315, guid: b0b4cfb6b2b65f3479e6540339f45681, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12367,7 +12367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "$10\tUpgrade"
+  m_text: $1000 Upgrade
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

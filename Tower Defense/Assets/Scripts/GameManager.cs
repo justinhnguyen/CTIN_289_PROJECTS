@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour {
 
     public void HandleNewTowerButton() {
 
-        bool hasTheMoney = money >= 2;
+        bool hasTheMoney = money >= 250;
 
         if (hasTheMoney && !inNewTowerMode) {
             inNewTowerMode = true;
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour {
 
     public void HandleUpgradeButton() {
 
-        bool hasTheMoney = money >= 10;
+        bool hasTheMoney = money >= 1000;
 
         if (hasTheMoney && !inNewTowerMode) {
             UpgradeAllTowers();
@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour {
 
     public void HandleTowerSpawned(Tower newTower) {
 
-        money -= 2;
+        money -= 250;
         towerList.Add(newTower);
 
         inNewTowerMode = false;
@@ -62,12 +62,12 @@ public class GameManager : MonoBehaviour {
     }
 
     public void HandleKillCreep() {
-        money += 1;
+        money += 100;
     }
 
     private void UpgradeAllTowers() {
 
-        money -= 10;
+        money -= 1000;
 
         foreach (Tower eachTower in towerList) {
             eachTower.Upgrade();
