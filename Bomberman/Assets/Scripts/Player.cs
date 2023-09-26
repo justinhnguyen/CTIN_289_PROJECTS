@@ -131,6 +131,11 @@ public class Player : MonoBehaviour
         { //Drop bomb
             DropBomb ();
         }
+
+        if (Input.GetKey(KeyCode.Alpha1))
+        {
+            animator.SetTrigger("Dance");
+        }
     }
 
     /// <summary>
@@ -170,6 +175,11 @@ public class Player : MonoBehaviour
         { //Drop Bomb. For Player 2's bombs, allow both the numeric enter as the return key or players 
             //without a numpad will be unable to drop bombs
             DropBomb ();
+        }
+
+        if (Input.GetKey(KeyCode.Alpha0))
+        {
+            animator.SetTrigger("Dance");
         }
     }
 

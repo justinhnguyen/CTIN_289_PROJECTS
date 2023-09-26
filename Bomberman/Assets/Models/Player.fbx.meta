@@ -1,75 +1,164 @@
 fileFormatVersion: 2
 guid: d4032cc66acb2dd49b5e299a0bd51a3f
-timeCreated: 1454364139
-licenseType: Free
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Armature
-    100002: Bone
-    100004: Bone.001
-    100006: Bone.002
-    100008: Bone.003
-    100010: Bone.003_end
-    100012: Bone.004
-    100014: Bone.004_end
-    100016: Bone.005
-    100018: Bone.006
-    100020: Bone.007
-    100022: Bone.007_end
-    100024: Bone.008
-    100026: Bone.008_end
-    100028: Bone.009
-    100030: Bone.009_end
-    100032: //RootNode
-    100034: Player_Cube.001
-    400000: Armature
-    400002: Bone
-    400004: Bone.001
-    400006: Bone.002
-    400008: Bone.003
-    400010: Bone.003_end
-    400012: Bone.004
-    400014: Bone.004_end
-    400016: Bone.005
-    400018: Bone.006
-    400020: Bone.007
-    400022: Bone.007_end
-    400024: Bone.008
-    400026: Bone.008_end
-    400028: Bone.009
-    400030: Bone.009_end
-    400032: //RootNode
-    400034: Player_Cube.001
-    4300000: Player_Cube.001
-    7400000: Armature|Idle
-    7400002: Armature|Walk
-    9500000: //RootNode
-    13700000: Player_Cube.001
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Armature
+  - first:
+      1: 100002
+    second: Bone
+  - first:
+      1: 100004
+    second: Bone.001
+  - first:
+      1: 100006
+    second: Bone.002
+  - first:
+      1: 100008
+    second: Bone.003
+  - first:
+      1: 100010
+    second: Bone.003_end
+  - first:
+      1: 100012
+    second: Bone.004
+  - first:
+      1: 100014
+    second: Bone.004_end
+  - first:
+      1: 100016
+    second: Bone.005
+  - first:
+      1: 100018
+    second: Bone.006
+  - first:
+      1: 100020
+    second: Bone.007
+  - first:
+      1: 100022
+    second: Bone.007_end
+  - first:
+      1: 100024
+    second: Bone.008
+  - first:
+      1: 100026
+    second: Bone.008_end
+  - first:
+      1: 100028
+    second: Bone.009
+  - first:
+      1: 100030
+    second: Bone.009_end
+  - first:
+      1: 100032
+    second: //RootNode
+  - first:
+      1: 100034
+    second: Player_Cube.001
+  - first:
+      4: 400000
+    second: Armature
+  - first:
+      4: 400002
+    second: Bone
+  - first:
+      4: 400004
+    second: Bone.001
+  - first:
+      4: 400006
+    second: Bone.002
+  - first:
+      4: 400008
+    second: Bone.003
+  - first:
+      4: 400010
+    second: Bone.003_end
+  - first:
+      4: 400012
+    second: Bone.004
+  - first:
+      4: 400014
+    second: Bone.004_end
+  - first:
+      4: 400016
+    second: Bone.005
+  - first:
+      4: 400018
+    second: Bone.006
+  - first:
+      4: 400020
+    second: Bone.007
+  - first:
+      4: 400022
+    second: Bone.007_end
+  - first:
+      4: 400024
+    second: Bone.008
+  - first:
+      4: 400026
+    second: Bone.008_end
+  - first:
+      4: 400028
+    second: Bone.009
+  - first:
+      4: 400030
+    second: Bone.009_end
+  - first:
+      4: 400032
+    second: //RootNode
+  - first:
+      4: 400034
+    second: Player_Cube.001
+  - first:
+      43: 4300000
+    second: Player_Cube.001
+  - first:
+      74: 7400000
+    second: Armature|Idle
+  - first:
+      74: 7400002
+    second: Armature|Walk
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Player_Cube.001
+  externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: Armature|Idle
       takeName: Armature|Idle
+      internalID: 0
       firstFrame: 0
       lastFrame: 1
       wrapMode: 0
@@ -134,6 +223,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Armature|Walk
       takeName: Armature|Walk
+      internalID: 0
       firstFrame: 7
       lastFrame: 70
       wrapMode: 0
@@ -201,25 +291,47 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -229,11 +341,18 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: 
+    globalScale: 1
+    rootMotionBoneName: Armature
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
