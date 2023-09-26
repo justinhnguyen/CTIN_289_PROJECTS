@@ -35,6 +35,7 @@ using System;
 public class Player : MonoBehaviour
 {
 
+    public GlobalStateManager globalManager;
     //Player parameters
     [Range (1, 2)] //Enables a nifty slider in the editor
     public int playerNumber = 1;
@@ -44,8 +45,9 @@ public class Player : MonoBehaviour
     //Can the player drop bombs?
     public bool canMove = true;
     //Can the player move?
-
+    public bool dead = false;
     private int bombs = 2;
+    public ParticleSystem myParticleSystem;
     //Amount of bombs the player has left to drop, gets decreased as the player
     //drops a bomb, increases as an owned bomb explodes
 
@@ -64,6 +66,7 @@ public class Player : MonoBehaviour
         rigidBody = GetComponent<Rigidbody> ();
         myTransform = transform;
         animator = myTransform.Find ("PlayerModel").GetComponent<Animator> ();
+        myParticleSystem = GetComponentInChildren<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -180,7 +183,24 @@ public class Player : MonoBehaviour
             Instantiate(bombPrefab, new Vector3(Mathf.RoundToInt(myTransform.position.x),
   bombPrefab.transform.position.y, Mathf.RoundToInt(myTransform.position.z)),
   bombPrefab.transform.rotation);
+            if (myParticleSystem != null)
+            {
+                // Ensure the particle system is not playing already.
+                myParticleSystem.Stop();
+                // Play the particle system on the player when the bomb is dropped.
+                myParticleSystem.Play();
+                // Stop the particle system after a brief delay (e.g., 2 seconds).
+                StartCoroutine(StopParticleSystemAfterDelay(0.5f));
+            }
         }
+    }
+
+    private IEnumerator StopParticleSystemAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        // Stop the particle system.
+        myParticleSystem.Stop();
     }
 
     public void OnTriggerEnter (Collider other)
@@ -188,6 +208,10 @@ public class Player : MonoBehaviour
         if (other.CompareTag ("Explosion"))
         {
             Debug.Log ("P" + playerNumber + " hit by explosion!");
+            dead = true; // 1
+            globalManager.PlayerDied(playerNumber); // 2
+            Destroy(gameObject); // 3  
+
         }
     }
 }
