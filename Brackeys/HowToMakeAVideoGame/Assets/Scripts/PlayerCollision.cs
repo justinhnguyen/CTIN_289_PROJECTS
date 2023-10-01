@@ -3,14 +3,12 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour 
 {
 	
-	public PlayerMovement movement;     // A reference to our PlayerMovement script
+	public PlayerMovement movement;     
 	public AudioSource collisionSound;
-
-	// This function runs when we hit another object.
-	// We get information about the collision and call it "collisionInfo".
+	public Score scoreScript;
+	
 	void OnCollisionEnter (Collision collisionInfo)
 	{
-		// We check if the object we collided with has a tag called "Obstacle".
 		if (collisionInfo.collider.tag == "Obstacle")
 		{
 			if (collisionSound != null)
@@ -21,6 +19,21 @@ public class PlayerCollision : MonoBehaviour
 			movement.enabled = false;   // Disable the players movement.
 			FindObjectOfType<GameManager>().EndGame();
 		}
+		
 	}
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Points"))
+        {
+            if (scoreScript != null)
+            {
+                // Increase the score by 50 points
+                scoreScript.IncreaseScore(50);
+
+                // Destroy the collected points (coins)
+                Destroy(other.gameObject);
+            }
+        }
+    }
 }
