@@ -5,6 +5,7 @@ public class PlayerCollision : MonoBehaviour
 	
 	public PlayerMovement movement;     
 	public AudioSource collisionSound;
+	public AudioSource pointsSound;
 	public Score scoreScript;
 	
 	void OnCollisionEnter (Collision collisionInfo)
@@ -26,12 +27,11 @@ public class PlayerCollision : MonoBehaviour
     {
         if (other.CompareTag("Points"))
         {
+			Debug.Log("+50");
             if (scoreScript != null)
             {
-                // Increase the score by 50 points
                 scoreScript.IncreaseScore(50);
-
-                // Destroy the collected points (coins)
+				pointsSound.Play();
                 Destroy(other.gameObject);
             }
         }
