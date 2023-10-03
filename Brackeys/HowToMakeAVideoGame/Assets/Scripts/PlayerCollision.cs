@@ -1,37 +1,36 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public class PlayerCollision : MonoBehaviour 
+public class PlayerCollision : MonoBehaviour
 {
-	
-	public PlayerMovement movement;     
-	public AudioSource collisionSound;
-	public AudioSource pointsSound;
-	public Score scoreScript;
-	
-	void OnCollisionEnter (Collision collisionInfo)
-	{
-		if (collisionInfo.collider.tag == "Obstacle")
-		{
-			if (collisionSound != null)
+    public PlayerMovement movement;
+    public AudioSource collisionSound;
+    public AudioSource pointsSound;
+    public Score scoreScript;
+
+    void OnCollisionEnter(Collision collisionInfo)
+    {
+        if (collisionInfo.collider.CompareTag("Obstacle"))
+        {
+            if (collisionSound != null)
             {
-				collisionSound.Play();
+                collisionSound.Play();
             }
 
-			movement.enabled = false;   // Disable the players movement.
-			FindObjectOfType<GameManager>().EndGame();
-		}
-		
-	}
+            movement.enabled = false;   // Disable the player's movement.
+            FindObjectOfType<GameManager>().EndGame();
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Points"))
         {
-			Debug.Log("+50");
+            Debug.Log("+50");
             if (scoreScript != null)
             {
                 scoreScript.IncreaseScore(50);
-				pointsSound.Play();
+                pointsSound.Play();
                 Destroy(other.gameObject);
             }
         }
