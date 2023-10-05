@@ -6,6 +6,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] float health = 100f;
     [SerializeField] GameObject deathVFX;
+    Vector2 offset = new Vector2(-0.6f, 0f);
 
     public void DealDamage(float damage)
     {
@@ -19,11 +20,13 @@ public class Health : MonoBehaviour
 
     private void TriggerDeathVFX()
     {
-        if(!deathVFX)
+        if (!deathVFX)
         {
             return;
         }
-        GameObject deathVFXObject = Instantiate(deathVFX, transform.position, transform.rotation);
+
+        Vector3 deathVFXPosition = (Vector2)transform.position + offset;
+        GameObject deathVFXObject = Instantiate(deathVFX, deathVFXPosition, Quaternion.identity);
         Destroy(deathVFXObject, 1f);
     }
 }
