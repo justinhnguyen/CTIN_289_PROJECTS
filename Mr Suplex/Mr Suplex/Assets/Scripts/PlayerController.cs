@@ -2,37 +2,28 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float speed;
-    [SerializeField] Vector3 moveDirection;
-    [SerializeField] Vector3 jumpVelocity;
-    [SerializeField] Animator animator;
-    CharacterController ch;
+    [SerializeField] private float moveSpeed = 5.0f;
+    [SerializeField] private float rotationSpeed = 10.0f;
+    [SerializeField] private Animator animator;
 
-    //Jump
-    [SerializeField] float jumpHeight = 1.5f;
-
-    void Start()
+    private void Update()
     {
-        ch = GetComponent<CharacterController>();
-    }
+        // Handle movement
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+        Vector3 moveDirection = new Vector3(horizontal, 0, vertical);
+        moveDirection = transform.TransformDirection(moveDirection);
+        moveDirection *= moveSpeed;
 
-    void Update()
-    {
-        float horizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        float vertical = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-        moveDirection = new Vector3(horizontal, 0, vertical);
-        moveDirection *= speed;
+        // Handle rotation
+        if (moveDirection != Vector3.zero)
+        {
+            Quaternion newRotation = Quaternion.LookRotation(moveDirection);
+            transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, rotationSpeed * Time.deltaTime);
+        }
 
-        if (moveDirection == Vector3.zero)
-        {
-            animator.SetFloat("Speed", 0);
-        }
-        else if (!Input.GetKey(KeyCode.LeftShift))
-        {
-            animator.SetFloat("Speed", 0.5f);
-        }
-        else
-            animator.SetFloat("Speed", 1);
-        
+        // Handle animations
+        float speed = moveDirection.magnitude;
+        animator.SetFloat("Speed", speed);
     }
 }

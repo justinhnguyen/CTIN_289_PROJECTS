@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891167051289f0345ae673f2933a34d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 994195063}
+  player: {fileID: 495476221}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +463,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a9b3589b13389b04baf5921528dd518b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: a9b3589b13389b04baf5921528dd518b,
         type: 3}
@@ -473,7 +473,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: a9b3589b13389b04baf5921528dd518b,
         type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -491,6 +491,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 495476229}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a9b3589b13389b04baf5921528dd518b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 495476232}
   m_SourcePrefab: {fileID: 100100000, guid: a9b3589b13389b04baf5921528dd518b, type: 3}
 --- !u!1 &495476221 stripped
 GameObject:
@@ -510,11 +514,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7952138806b004549a850f007aef6edf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  moveDirection: {x: 0, y: 0, z: 0}
-  jumpVelocity: {x: 0, y: 0, z: 0}
+  moveSpeed: 1
+  rotationSpeed: 2
   animator: {fileID: 495476230}
-  jumpHeight: 1.5
 --- !u!65 &495476228
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -568,6 +570,33 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 495476220}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &495476232
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495476221}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,7 +665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &994195065
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -715,11 +744,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7952138806b004549a850f007aef6edf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  moveDirection: {x: 0, y: 0, z: 0}
-  jumpVelocity: {x: 0, y: 0, z: 0}
+  moveSpeed: 5
+  rotationSpeed: 10
   animator: {fileID: 0}
-  jumpHeight: 1.5
 --- !u!143 &994195069
 CharacterController:
   m_ObjectHideFlags: 0
@@ -951,7 +978,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1.69, z: 0}
-  m_LocalScale: {x: 9.5644, y: 1, z: 18.827}
+  m_LocalScale: {x: 76.483635, y: 1, z: 96.6164}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
