@@ -3,7 +3,17 @@ guid: ab67e351b9e662e47bc6891e4fdf0db7
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_spiderman_belt
+    second: {fileID: -6760961433763779291, guid: aff471f5d41c0bf4ab00a3fe557e2b58, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_spiderman_body
+    second: {fileID: 4497270671158856414, guid: aff471f5d41c0bf4ab00a3fe557e2b58, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

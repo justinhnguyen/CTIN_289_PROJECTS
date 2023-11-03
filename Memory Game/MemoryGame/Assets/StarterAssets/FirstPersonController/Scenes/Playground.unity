@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 619e305f5165a9946b7f72464e44ca4a, type: 3}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37225994, g: 0.54327077, b: 0.7059553, a: 1}
+  m_IndirectSpecularColor: {r: 0.3722602, g: 0.5432711, b: 0.7059565, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1537,75 +1537,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1001 &1066961905
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 15.451
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 15.451
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 15.451
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.426
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.90999997
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 27.245605
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.04003527
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.99919826
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 184.589
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
-      propertyPath: m_Name
-      value: Spiderman_Char
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ab67e351b9e662e47bc6891e4fdf0db7, type: 3}
 --- !u!1001 &1101652758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3725,7 +3656,6 @@ SceneRoots:
   - {fileID: 798983647}
   - {fileID: 393766212}
   - {fileID: 407118032}
-  - {fileID: 1066961905}
   - {fileID: 1697585773}
   - {fileID: 1785335784}
   - {fileID: 925675029}
