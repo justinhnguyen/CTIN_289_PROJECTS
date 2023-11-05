@@ -19,6 +19,7 @@ public class BallSpawner : MonoBehaviour
         {
             // Instantiate the ball prefab at the position of the spawner
             GameObject newBall = Instantiate(ballPrefab, transform.position, Quaternion.identity);
+            
 
             // Get the rigidbody of the spawned ball
             Rigidbody rb = newBall.GetComponent<Rigidbody>();
